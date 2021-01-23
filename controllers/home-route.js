@@ -13,5 +13,19 @@ router.get('/', (req, res) => {
       }
     });
   });
+  
+  router.get('/signup',(req,res)=>{
+   res.render('signup');
+  });
+  router.get('/signin',(req,res)=>{
+    res.render('signin');
+   });
+router.post('/signup',(req,res)=>{
+     
+});
+
+router.get('/homepage',(req,res)=>{
+    res.render('homepage');
+   });
 
 module.exports=router;
