@@ -1,9 +1,16 @@
 const router = require('express').Router();
-const homeRoute= require('./home-route');
-const dashboardRoutes = require('./dashboard-route');
+const apiRoutes = require('./api');
+const homeRoutes = require('./home-route.js');
+const dashboardRoutes = require('./dashboard-route.js');
 
-router.use('/dashboard', dashboardRoutes);
-router.use('/',homeRoute);
 router.use('/api', apiRoutes);
+router.use('/', homeRoutes);
+router.use('/dashboard', dashboardRoutes);
 
-module.exports=router;
+router.use((req, res) => {
+  res.status(404).end();
+});
+
+
+
+module.exports = router;

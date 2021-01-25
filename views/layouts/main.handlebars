@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech blog</title>
+  <title>Tech Blog</title>
   <link rel="stylesheet" href="/style.css">
 </head>
- <header>
-<nav>
-    <ul id="flexList">
-      <li ><a href='/homepage'><h1>Home</a></h1></li>
-      <li><a href='/dashboard'><h1>Dashboard</h1></a></li>
-      <li><a href='/signin'><h1>Login</h1></a></li>
-      <li><a href='/signup'><h1>Sign Up</h1></a></li>
-    </ul>
-  </nav>
-</header>
 
-<body class="wrapper">
- <div class="main"><h1>Tech Blog</h1></div>
-  
-  {{{body}}}
+<body>
+  <div class="wrapper">
+      <header class="hero">
+          <div>
+            <nav class"nav">
+                    <a class="link" href="/">Home</a>
+                    <a class="link"  href="/dashboard"><span id="selectedText">Dashboard</span></a>
+                    {{#if loggedIn}}
+                    <a class="link" href="/" id="logout">Logout</a>
+                    {{else}}
+                    <a class="link" href="/login">Login</a>
+                    {{/if}}
+                </nav>          
+          </div>
+
+          <h1 class="tech-blog-title"><i class="fab "></i><span class="glow" id="changeDashboard">Tech Blog</span></h1>
+      </header>
+
+    <main>
+      {{{ body }}}
+    </main>
+  </div>
+     
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    
+    {{/if}}
+   
+    
 </body>
-</html>
