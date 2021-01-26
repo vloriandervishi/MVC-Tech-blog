@@ -7,7 +7,7 @@ CMS style tech blog that allows anyone to expresss their thoughts and feelings a
 ## Built With
 NODE.JS
 MYSQL
-JAVASCRIPT
+Javascript
 HTML 
 CSS
 ## Installation 
