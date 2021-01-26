@@ -1,6 +1,6 @@
 async function newFormHandler(event) {
   event.preventDefault();
-  document.querySelector("#changeDashboard").innerText=document.querySelector("#selecteText").innerText;
+  // document.querySelector("#changeDashboard").innerText=document.querySelector("#selecteText").innerText;
   const title = document.querySelector('input[name="post-title"]').value;
   const content = document.querySelector('input[name="content"]').value;
 
