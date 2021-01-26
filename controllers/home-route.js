@@ -46,7 +46,7 @@ router.get('/login', (req, res) => {
         res.redirect('/');
         return; 
     }
-    res.render('login'); res.render("login", {
+    res.render("login", {
       formTitle: "Login",
       elementId: "login-form",
       buttonText: "Login!",
