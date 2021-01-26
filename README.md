@@ -24,6 +24,7 @@ MIT
 ## Website
 
 ## Usage
-
+Must be logged in by clicking on the user name , you will be automatically logged in and then can navigate to dashboard where you create your posts and comments, then after 
+that you can log out.
 ## CONTRIBUTER
 vd2c@valdo
