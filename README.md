@@ -22,6 +22,7 @@ CSS
 MIT 
 
 ## Website
+https://vd-tech-blog.herokuapp.com/
 
 ## Usage
 Must be logged in by clicking on the user name , you will be automatically logged in and then can navigate to dashboard where you create your posts and comments, then after 
